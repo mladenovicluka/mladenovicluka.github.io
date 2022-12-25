@@ -6,6 +6,7 @@
 	<title>Luka Mladenovic - Software Engineering Student</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="shortcut icon" href="assets/favicon.png">
 	<link rel="stylesheet" href="assets/css/main.css" />
 
 	<noscript>
@@ -24,7 +25,10 @@
 			<!-- Header -->
 			<header id="header">
 				<h1>Luka Mladenovic</h1>
-				<p>Software Engineer &nbsp;&bull;&nbsp; Student &nbsp;&bull;&nbsp;<a href="/resume">Resume</a> </p>
+
+
+
+				<p>Software Engineer &nbsp;&bull;&nbsp; Student &nbsp;&bull;&nbsp;<a href="#"  id="download-link">Resume</a> </p>
 				<nav>
 					<ul>
 						<li>
@@ -67,6 +71,16 @@
 		window.onorientationchange = function() {
 			document.body.scrollTop = 0;
 		}
+
+		  document.getElementById("download-link").addEventListener("click",
+			 function() {
+
+		    this.href = "assets/Resume/Mladenovic_Luka_Resume.pdf";
+
+		    this.download = "Mladenovic_Luka_Resume.pdf";
+				
+		  });
+
 	</script>
 </body>
 
